@@ -1,0 +1,204 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>99 Grill Order Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .header {
+            background-color: #d3131e;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+            border-bottom-left-radius: 20%;
+            border-bottom-right-radius: 20%;
+        }
+
+        .header .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header .top-bar img {
+            width: 40px;
+        }
+
+        .header .top-bar p {
+            margin-left: 10px;
+            font-size: 14px;
+        }
+
+        .burger {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+
+        .order-text {
+            font-size: 40px;
+            margin: 20px 0;
+            font-weight: bold;
+            font-family: 'Bebas Neue', sans-serif;
+            color: #333;
+        }
+
+        .order-text span {
+            font-size: 50px;
+            font-family: 'Great Vibes', cursive;
+            color: #d3131e;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .btn {
+            background-color:  #d3131e;
+            border: none;
+            padding: 15px;
+            font-size: 20px;
+            color: rgb(244, 243, 243);
+            border-radius: 30px;
+            margin: 10px 0;
+            width: 80%;
+            max-width: 300px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            background-color: #d3131e;
+            border: 2px solid white;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #d3131e;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            height: 60px;
+        }
+
+        .nav a {
+            color: white;
+            text-align: center;
+            flex: 1;
+            text-decoration: none;
+        }
+
+        .nav a img {
+            max-width: 25px;
+        }
+
+        .nav-text {
+            font-size: 10px;
+            margin-top: 2px;
+            font-family: 'Bebas Neue', sans-serif;
+        }
+         .nav a.active {
+            position: relative;
+        }
+
+        .nav a.active:before {
+            content: '';
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 60px;
+            background-color: #d3131e;
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .nav a.active img {
+            width: 30px;
+            height: 30px;
+            margin-top: -10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"> 
+        <div class="top-bar">
+            <div style="display: flex; align-items: center;">
+                <a href="#club">
+                    <i style="color: white;"  class="fa-solid fa-ellipsis-vertical "></i>
+                </a>
+                <p>9999999</p>
+            </div>
+            <div>
+                <a href="#prfile">
+                    <i style="font-size: 35px; color: #fff; margin-right: 5px;"  class="fa-solid fa-circle-user"></i>
+                </a>
+                <a href="#menu">
+                    <i style="font-size: 35px; color: #fff;"  class="fa-solid fa-circle-user"></i>
+                </a>
+            </div>
+        </div>
+        <div>
+            <img src="./fea0067b-a643-4019-a25c-49c4c5027dc4.png" alt="Burger" class="burger">
+        </div>
+    </div>
+
+    <!-- Container for Order Text and Buttons -->
+    <div class="container">
+        <div class="order-text" style="text-align: center; color: #d3131e; " >
+            START YOUR <br>
+            <span>Order</span>
+        </div>
+        <div class="btn-container">
+            <button class="btn">Order Pickup</button>
+            <button class="btn">Order Delivery</button>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <a href="#home" class="active">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/home.png" alt="Home">
+            <div class="nav-text">Home</div>
+        </a>
+        <a href="#offers">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/price-tag.png" alt="Offers">
+            <div class="nav-text">Offers</div>
+        </a>
+        <a href="#menu">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/restaurant-menu.png" alt="Menu">
+            <div class="nav-text">Menu</div>
+        </a>
+        <a href="#club">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/star.png" alt="99 Club">
+            <div class="nav-text">99 Club</div>
+        </a>
+    </div>
+</body>
+</html>
